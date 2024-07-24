@@ -21,13 +21,19 @@ Ensure you have the following installed on your machine:
 git clone https://github.com/Haymanot-Demis/Recipe-.git
 ```
 
-2. **Install packages:**
+2. **Change directory to the project:**
+
+```bash
+cd Recipe-/Recipe
+```
+
+3. **Install packages:**
 
 ```bash
 npm install
 ```
 
-3. **Run the project:**
+4. **Run the project:**
 
 ```bash
 npm run dev
