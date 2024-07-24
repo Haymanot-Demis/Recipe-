@@ -5,7 +5,7 @@ const { roleRights } = require('../config/roles');
 
 const verifyCallback = (req, resolve, reject, requiredRights) => async (err, user, info) => {
   if (!user) {
-    return reject(new ApiError(httpStatus.NOT_FOUND, 'User not found'));
+    return reject(new ApiError(httpStatus.NOT_FOUND, 'User or token not found'));
   }
   if (err || info) {
     return reject(new ApiError(httpStatus.UNAUTHORIZED, 'Please authenticate'));
